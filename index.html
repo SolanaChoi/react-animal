@@ -144,7 +144,7 @@
             });
             const [count, setCount] = React.useState(() => {
                 console.log('count useState() 실행됨!');
-                return jsonLocalStorage.getItem('count')
+                return jsonLocalStorage.getItem('count') || 1;
             });
 
             const choiceFavorite = favorites.includes(mainAnimal);
